@@ -47,11 +47,11 @@ class RuntimeContext:
 
     @property
     def print_comprador(self) -> Path:
-        return self.caminho_resultado("print_comprador.png")
+        return self.caminho_resultado("cadastro_comprador.png")
 
     @property
     def print_catalogo(self) -> Path:
-        return self.caminho_resultado("print_catalogo.png")
+        return self.caminho_resultado("lista_produtos.png")
 
     @property
     def log_file(self) -> Path:
