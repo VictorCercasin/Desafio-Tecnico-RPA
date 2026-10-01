@@ -1,20 +1,15 @@
 import logging
 import re
 from decimal import Decimal
-
 from bs4 import BeautifulSoup
-
-from selenium.common.exceptions import (
-    WebDriverException
-)
+from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
 from src.schemas import Produto
-from src.utils.driver import config_driver, clicar_elemento
+from src.utils.driver import config_driver
 from src.settings import URL
 from src.utils.utils import salvar_screenshot_erro
 

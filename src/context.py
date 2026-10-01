@@ -1,5 +1,3 @@
-"""Estado compartilhado de uma execução do robô."""
-
 from __future__ import annotations
 
 from dataclasses import dataclass

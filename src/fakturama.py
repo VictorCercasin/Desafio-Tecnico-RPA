@@ -4,9 +4,7 @@ import re
 import csv
 import pyperclip
 import pyautogui
-from decimal import Decimal
 from pathlib import Path
-
 
 from src.utils.utils import (salvar_screenshot_erro, salvar_screenshot_processo
                              , maximizar_janela_processo)

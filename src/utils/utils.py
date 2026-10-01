@@ -1,23 +1,19 @@
-"""Capturas de erro do navegador ou da tela do desktop."""
-
 import logging
 import re
+import subprocess
+import win32con
+import win32gui
+import win32process
+
 from datetime import datetime
 from pathlib import Path
-
+from PIL import ImageGrab
 from selenium.webdriver.remote.webdriver import WebDriver
 
 from src.context import CTX
 
 logger = logging.getLogger("desafio_rpa")
 
-import subprocess
-from pathlib import Path
-
-import win32con
-import win32gui
-import win32process
-from PIL import ImageGrab
 
 def maximizar_janela_processo(processo: subprocess.Popen) -> bool:
     try:

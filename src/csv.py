@@ -1,5 +1,3 @@
-"""Grava os arquivos CSV produzidos pelo robô."""
-
 import csv
 import logging
 from pathlib import Path

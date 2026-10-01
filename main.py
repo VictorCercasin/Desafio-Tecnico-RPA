@@ -2,20 +2,16 @@ import argparse
 import logging
 from pathlib import Path
 
-from src.settings import (PATH, )
+from src.settings import PATH
 from src.config_logger import configurar_logger
 from src.context import CTX
-
 from src.csv import salvar_comprador_csv, salvar_catalogo_csv
-
 from src.fakenamegenerator import coletar_comprador_fake
 from src.saucedemo import coletar_catalogo
 from src.fakturama import cadastrar_dados_fakturama
 
-from src.schemas import Comprador
 
 logger = logging.getLogger("desafio_rpa")
-
 
 
 def main() -> bool:

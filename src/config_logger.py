@@ -1,8 +1,5 @@
-"""Configuração do log de uma execução do desafio RPA."""
-
 import logging
 from pathlib import Path
-
 from colorlog import ColoredFormatter
 
 LOGGER_NAME = "desafio_rpa"

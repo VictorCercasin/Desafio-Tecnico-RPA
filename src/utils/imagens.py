@@ -4,12 +4,7 @@ import pyautogui
 from pathlib import Path
 from typing import Any
 
-
-
 from src.context import CTX
-
-
-import pyautogui
 
 
 def _validar_parametros(timeout: float, intervalo: float, confidence: float) -> None:
